@@ -7,7 +7,7 @@ pipeline{
         stage("Compile the source code")	{
             steps	{
 		    
-            sh "./mvnw compile"
+            bat "mvn compile"
             }
         }
         stage("Test the source code")	{
