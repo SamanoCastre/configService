@@ -17,7 +17,7 @@ pipeline{
         }
          stage("Code coverage. Limiting the minimum score for lines coverage to 75%")	{
             steps	{
-            bat "mvn install"
+            bat "mvn jacoco:report"
             publishHTML	(target:	[
 				reportDir:	'target/site/jacoco',
 				reportFiles:	'index.html',
