@@ -11,11 +11,6 @@ Note : It must be the first to be launched in order to serve other microservices
 1. Java 17
 2. Maven 3.8.6
 
-
-#Dependencies
-1. spring-cloud-config-server
-2. spring-boot-starter-test
-
 #Build
 command line : mvn clean install (see jenkinsfile)
 
